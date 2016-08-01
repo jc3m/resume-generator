@@ -57,12 +57,17 @@ h1 {
 }
 
 h3 {
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 a,p,label,input {
@@ -81,17 +86,49 @@ a:focus {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 .body-wrapper {
   margin-left: 40px;
 }
 
 #name {
-  font-family: Source Sans Pro;
+  font-family: Bebas Neue;
   font-weight: 300;
   font-size: 108px;
   padding-bottom: 10px;
   margin-bottom: 15px;
   margin-top: 50px;
+}
+
+.block-wrapper {
+  padding-left: 25px;
+  border-left: 3px solid #ddd;
+}
+
+.education #institution {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  float: left;
+}
+
+.education .date {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 25px;
+  float: right;
+}
+
+.education h5 {
+  margin-top: 0px;
+  display: inline;
+}
+
+#course-list {
+  display: inline;
 }
 
 .details {
@@ -101,6 +138,10 @@ a:focus {
 .listed {
   margin-top: 5px;
   margin-left: 12px;
+}
+
+.listed > p {
+  margin-bottom: 5px;
 }
 
 .list-title {
@@ -115,4 +156,17 @@ a:focus {
 
 .right-wrapper {
   margin-left: 50px;
+  padding-top: 40px;
+}
+
+.right-wrapper > div {
+  margin-top: 40px;
+}
+
+svg {
+  background-color: #eee;
+}
+
+.skill > h5 {
+  margin-bottom: 4px;
 }

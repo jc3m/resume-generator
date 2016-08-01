@@ -10,17 +10,66 @@
   "education": {
     "institution": "University of Illinois at Urbana-Champaign",
     "honors": [
-      "Engineering Dean's List, Fall 2015, Spring 2016",
-      "James Scholar"
+      "Engineering Dean's List (Fall 2015, Spring 2016)",
+      " James Scholar"
     ],
     "degree": "B.S. Computer Engineering",
     "gpa": "3.98",
     "courses": [
       "ECE 120",
-      "ECE 220",
-      "Course 2"
+      "ECE 220"
     ],
-    "startDate": "August 2015",
+    "startDate": "Aug. 2015",
     "endDate": "Present"
+  },
+  "skills": {
+    "languages": [
+      {
+        "name": "Python",
+        "weight": 7.3
+      },
+      {
+        "name": "Javascript",
+        "weight": 7.0
+      },
+      {
+        "name": "HTML/CSS",
+        "weight": 6.3
+      },
+      {
+        "name": "Java",
+        "weight": 4.5
+      },
+      {
+        "name": "C",
+        "weight": 5.2
+      },
+      {
+        "name": "Ruby",
+        "weight": 1.8
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Linux",
+        "weight": 8.1
+      },
+      {
+        "name": "Git/SVN",
+        "weight": 7.4
+      },
+      {
+        "name": "Node.js",
+        "weight": 6.6
+      },
+      {
+        "name": "D3.js",
+        "weight": 6.2
+      },
+      {
+        "name": "MongoDB",
+        "weight": 4.8
+      }
+    ]
   }
 }

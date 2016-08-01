@@ -64,6 +64,14 @@ function render(t, doc, callback) {
   fs.readFile(templatePath, 'utf-8', function(err, temp) {
     if (err)
       return callback(err);
+    Handlebars.registerHelper('list', function(items, options) {
+      var out = "<div>";
+      for (var i = 0; i < items.length; i++) {
+        out = out + '<div class="skill"><h5>' + options.fn(items[i])
+          + '</h5><svg weight="' + items[i].weight + '"></svg></div>'
+      }
+      return out + '</div>'
+    });
     var template = Handlebars.compile(temp);
     var res = template(doc);
     console.log(res);
