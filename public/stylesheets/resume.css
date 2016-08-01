@@ -47,6 +47,11 @@
   border: 1px solid #777;
 }
 
+.cont {
+  margin: auto;
+  /*border: 1px solid #777;*/
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: Source Sans Pro;
     font-weight: 300;
