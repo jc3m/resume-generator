@@ -1,0 +1,38 @@
+<html>
+<head>
+  <link rel="stylesheet" href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/resume.css">
+  <link rel="stylesheet" href="vendor/font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container" style="height: 1010px; width: 780px">
+    <div class="header clearfix">
+      <div class="col-md-8">
+        <h1 id="name">Jonathan J. Xu</h1>
+      </div>
+
+      <div class="col-md-offset-1 col-md-3">
+        <div class="listed">
+          <p><i class="fa fa-phone" aria-hidden="true"></i> 847-387-2018</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> jjxu3@illinois.edu</p>
+          <p><i class="fa fa-external-link" aria-hidden="true"></i> jonathanjx.me</p>
+          <p><i class="fa fa-github" aria-hidden="true"></i> /jc3m</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-content">
+      <div class="col-md-8">
+        <h3>Education</h3>
+        <h4>University of Illinois at Urbana-Champaign</h4>
+        <p>B.S. Computer Engineering</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Skills</h3>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "basics": {
+    "name": "Jonathan J. Xu",
+    "website": "jonathanjx.me",
+    "phone": "847-387-2018",
+    "email": "jjxu3@illinois.edu",
+    "github": "/jc3m",
+    "linkedin": "/in/jonathanjxu"
+  },
+  "education": {
+    "institution": "University of Illinois at Urbana-Champaign",
+    "honors": [
+      "Engineering Dean's List, Fall 2015, Spring 2016",
+      "James Scholar"
+    ],
+    "degree": "B.S. Computer Engineering",
+    "gpa": "3.98",
+    "courses": [
+      "ECE 120",
+      "ECE 220",
+      "Course 2"
+    ],
+    "startDate": "August 2015",
+    "endDate": "Present"
+  }
+}
