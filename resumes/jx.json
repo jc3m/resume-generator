@@ -19,18 +19,42 @@
       "ECE 120",
       "ECE 220"
     ],
-    "startDate": "Aug. 2015",
+    "startDate": "Aug 2015",
     "endDate": "Present"
   },
+  "experience": [
+    {
+      "company": "Corporate Executive Board",
+      "website": "https://www.cebglobal.com/",
+      "position": "Data Intern",
+      "startDate": "Oct 2015",
+      "endDate": "Present",
+      "summary": [
+        "Worked with a team of UIUC students and proffessionals at CEB.",
+        "Managed big data within Hadoop clusters using tools such as Hive and Sqoop",
+        "Created user interfaces and data visualizations for business marketing using D3.js"
+      ],
+      "highlights": []
+    },
+    {
+      "company": "FIRST Tech Challenge Robotics",
+      "website": "",
+      "position": "Team Captain",
+      "startDate": "2011",
+      "endDate": "2015",
+      "summary": [
+        "Managed a team of eight engineers 12+ hours/week to build a competitive robot",
+        "Used Autodesk Inventor to design and prototype ideas",
+        "Two time participant at the FIRST World Championship"
+      ],
+      "highlights": []
+    }
+  ],
   "skills": {
     "languages": [
       {
-        "name": "Python",
-        "weight": 7.3
-      },
-      {
-        "name": "Javascript",
-        "weight": 7.0
+        "name": "C",
+        "weight": 5.2
       },
       {
         "name": "HTML/CSS",
@@ -41,8 +65,12 @@
         "weight": 4.5
       },
       {
-        "name": "C",
-        "weight": 5.2
+        "name": "Javascript",
+        "weight": 7.0
+      },
+      {
+        "name": "Python",
+        "weight": 7.3
       },
       {
         "name": "Ruby",
@@ -51,24 +79,24 @@
     ],
     "technologies": [
       {
-        "name": "Linux",
-        "weight": 8.1
+        "name": "D3.js",
+        "weight": 6.2
       },
       {
         "name": "Git/SVN",
         "weight": 7.4
       },
       {
-        "name": "Node.js",
-        "weight": 6.6
-      },
-      {
-        "name": "D3.js",
-        "weight": 6.2
+        "name": "Linux",
+        "weight": 8.1
       },
       {
         "name": "MongoDB",
         "weight": 4.8
+      },
+      {
+        "name": "Node.js",
+        "weight": 6.6
       }
     ]
   }

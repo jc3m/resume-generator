@@ -64,7 +64,8 @@ function render(t, doc, callback) {
   fs.readFile(templatePath, 'utf-8', function(err, temp) {
     if (err)
       return callback(err);
-    Handlebars.registerHelper('list', function(items, options) {
+
+    Handlebars.registerHelper('sk-list', function(items, options) {
       var out = "<div>";
       for (var i = 0; i < items.length; i++) {
         out = out + '<div class="skill"><h5>' + options.fn(items[i])
@@ -72,6 +73,23 @@ function render(t, doc, callback) {
       }
       return out + '</div>'
     });
+
+    Handlebars.registerHelper('list', function(items, options) {
+      var out = '<div class="block-wrapper">';
+      for (var i = 0; i < items.length; i++) {
+        out = out + options.fn(items[i]);
+      }
+      return out + "</div>"
+    });
+
+    Handlebars.registerHelper('points', function(items, options) {
+      var out = '<ul>';
+      for (var i = 0; i < items.length; i++) {
+        out = out + '<li>' + items[i] + '</li>';
+      }
+      return out + "</ul>"
+    })
+
     var template = Handlebars.compile(temp);
     var res = template(doc);
     console.log(res);

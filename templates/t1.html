@@ -7,7 +7,8 @@
 
 <body>
   <div class="cont" style="width: 1170px; height: 1514px;">
-    <div class="col-md-8 col-sm-8 col-xs-8">
+    <!--<div class="col-md-8 col-sm-8 col-xs-8">-->
+    <div class="left-div">
       <div class="body-wrapper">
         <h1 id="name">{{basics.name}}</h1>
 
@@ -26,6 +27,13 @@
 
         <div class="experience">
           <h3>Experience</h3>
+          {{#list experience}}
+            <div class="work-header clearfix">
+              <h4 class="work-left">{{position}}, {{company}}</h4>
+              <p class="date">{{startDate}} - {{endDate}}</p>
+            </div>
+            {{#points summary}}{{/points}}
+          {{/list}}
         </div>
 
         <div class="projects">
@@ -50,12 +58,12 @@
 
         <div class="skill languages">
           <h3>Languages</h3>
-          {{#list skills.languages}}{{name}}{{/list}}
+          {{#sk-list skills.languages}}{{name}}{{/sk-list}}
         </div>
 
         <div class="skill technologies">
           <h3>Technologies</h3>
-          {{#list skills.technologies}}{{name}}{{/list}}
+          {{#sk-list skills.technologies}}{{name}}{{/sk-list}}
         </div>
       </div>
     </div>
