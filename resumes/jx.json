@@ -31,8 +31,9 @@
       "endDate": "Present",
       "summary": [
         "Worked with a team of UIUC students and proffessionals at CEB.",
-        "Managed big data within Hadoop clusters using tools such as Hive and Sqoop",
-        "Created user interfaces and data visualizations for business marketing using D3.js"
+        "Managed data within Hadoop clusters using tools such as Hive and Sqoop",
+        "Created, populated, managed an ElasticSearch index and built data visualizations using the Kibana interface",
+        "Built user interfaces and data visualizations for marketing data using D3.js"
       ],
       "highlights": []
     },
@@ -43,11 +44,44 @@
       "startDate": "2011",
       "endDate": "2015",
       "summary": [
-        "Managed a team of eight engineers 12+ hours/week to build a competitive robot",
+        "Managed a team of 8 engineers 12+ hours/week to build a competitive robot",
         "Used Autodesk Inventor to design and prototype ideas",
         "Two time participant at the FIRST World Championship"
       ],
       "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "Grapevine",
+      "startDate": "Mar 2016",
+      "endDate": "Present",
+      "summary": [
+        "Grapevine is a social event finding iOS and Android app where users can post hosted events or find ones happening near by",
+        "Worked on a RESTful API backend architecture to manage app data",
+        "Built using Node.js + Express with a MongoDB database"
+      ]
+    },
+    {
+      "name": "ScavAR",
+      "startDate": "Nov 2015",
+      "endDate": "",
+      "summary": [
+        "Augmented reality scavenger hunt mobile application where specific tokens generate animated, three dimensional models on the user's screen",
+        "Built at WildHacks 2015, 1st place winner, Paypal/Braintree Most Disruptive Use of Braintree SDK or Paypal API",
+        "Built using Unity, Vuforia, and Ruby on Rails"
+      ]
+    }
+  ],
+  "campus": [
+    {
+      "organization": "RedC Robotics Lead Web Developer",
+      "startDate": "Sep 2015",
+      "endDate": "Present",
+      "summary": [
+        "Created redcrobotics.com using Node.js, Express, and MongoDB",
+        "Website used as a promotional tool as well as a way to manage team applications, contact, and member information"
+      ]
     }
   ],
   "skills": {
@@ -75,6 +109,10 @@
       {
         "name": "Ruby",
         "weight": 1.8
+      },
+      {
+        "name": "SQL",
+        "weight": 3.95
       }
     ],
     "technologies": [
@@ -97,7 +135,12 @@
       {
         "name": "Node.js",
         "weight": 6.6
+      },
+      {
+        "name": "Ruby on Rails",
+        "weight": 3.7
       }
     ]
-  }
+  },
+  "QR": "images/qr-jonathanjx-me.svg"
 }

@@ -99,7 +99,7 @@ p {
 .left-div, .right-div {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
+  padding-right: 40px;
   padding-left: 15px;
   float: left;
 }
@@ -131,23 +131,23 @@ p {
 }
 
 .education #institution,
-.work-left {
+.section-left {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 400;
   float: left;
 }
 
-.work-header {
+.section-header {
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-.experience ul {
+.left-div ul {
   padding-left: 20px;
 }
 
-.experience ul li {
+.left-div ul li {
   line-height: 26px;
   list-style: square;
 }
@@ -159,7 +159,7 @@ p {
 .date {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-right: 25px;
+  margin-right: 0px;
   float: right;
 }
 
@@ -210,4 +210,11 @@ svg {
 
 .skill > h5 {
   margin-bottom: 4px;
+}
+
+.qr img {
+  position: absolute;
+  bottom: 98px;
+  right: 98px;
+  width: 200px;
 }
