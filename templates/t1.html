@@ -21,7 +21,10 @@
             </div>
             <p>{{education.degree}}, GPA: {{education.gpa}}</p>
             <p>{{education.honors}}</p>
-            <h5>Courses: </h5><p id="course-list"> {{education.courses}}</p>
+            <h5>Relevant Courses: </h5>
+            <p id="course-list">
+              {{#courses education.courses}}{{/courses}}
+            </p>
           </div>
         </div>
 
@@ -48,7 +51,7 @@
           {{/list}}
         </div>
 
-        <div class="campus">
+        <!-- <div class="campus">
           <h3>Campus Involvement</h3>
           {{#list campus}}
             <div class="section-header clearfix">
@@ -57,7 +60,7 @@
             </div>
             {{#points summary}}{{/points}}
           {{/list}}
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -72,7 +75,16 @@
             <!--<p><i class="fa fa-external-link" aria-hidden="true"></i> {{basics.website}}</p>-->
             <p><i class="fa fa-linkedin" aria-hidden="true"></i> {{basics.linkedin}}</p>
             <p><i class="fa fa-github" aria-hidden="true"></i> {{basics.github}}</p>
+            <p><i class="fa fa-home" aria-hidden="true"></i> {{basics.address.line1}}</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{basics.address.line2}}</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{basics.address.line3}}</p>
           </div>
+
+          <!--<div class="address">
+            <p>{{basics.address.line1}}</p>
+            <p>{{basics.address.line2}}</p>
+            <p>{{basics.address.line3}}</p>
+          </div>-->
         </div>
 
         <div class="skill languages">
@@ -85,7 +97,15 @@
           {{#sk-list skills.technologies}}{{name}}{{/sk-list}}
         </div>
 
+        <div class="skill devops">
+          <h3>DevOps</h3>
+          {{#sk-list skills.devops}}{{name}}{{/sk-list}}
+        </div>
+
         {{#if QR}}
+          <div class="website">
+            <p>{{basics.website}}</p>
+          </div>
           <div class="qr">
             <img src="{{QR}}"></img>
           </div>

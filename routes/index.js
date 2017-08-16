@@ -5,9 +5,8 @@ var path = require('path');
 var fs = require('fs');
 var Handlebars = require('handlebars');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.redirect('/resume');
 });
 
 router.get('/read', function(req, res, next) {
@@ -27,10 +26,7 @@ router.get('/read', function(req, res, next) {
 
 router.get('/resume', function(req, res, next) {
   if (!req.query.path) {
-    return next({
-      status: 400,
-      message: 'Must specify a path in query'
-    });
+    req.query.path = 'jx.json'
   }
 
   parseJSON(req.query.path, function(err, doc) {
@@ -88,11 +84,21 @@ function render(t, doc, callback) {
         out = out + '<li>' + items[i] + '</li>';
       }
       return out + "</ul>"
-    })
+    });
+
+    Handlebars.registerHelper('courses', function(items, options) {
+      var out = '';
+      for (var i = 0; i < items.length - 1; i++) {
+        out = out + items[i] + ', ';
+      }
+      out = out + items[items.length - 1];
+      console.log(out);
+      return out;
+    });
 
     var template = Handlebars.compile(temp);
     var res = template(doc);
-    console.log(res);
+    //console.log(res);
     return callback(null, res);
   });
 }

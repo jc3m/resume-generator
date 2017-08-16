@@ -62,18 +62,19 @@ h1 {
 }
 
 h3 {
+  margin-top: 10px;
   font-size: 28px;
   font-weight: 600;
 }
 
 h4 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h5 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a,p,label,input,li {
@@ -120,8 +121,8 @@ p {
   font-family: Bebas Neue;
   font-weight: 300;
   font-size: 108px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  /*padding-bottom: 10px;*/
+  margin-bottom: 0px;
   padding-top: 50px;
 }
 
@@ -139,7 +140,7 @@ p {
 }
 
 .section-header {
-  margin-top: 15px;
+  margin-top: 7px;
   margin-bottom: 5px;
 }
 
@@ -161,6 +162,10 @@ p {
   margin-bottom: 0px;
   margin-right: 0px;
   float: right;
+}
+
+.education h3 {
+  margin-top: 0;
 }
 
 .education h5 {
@@ -204,6 +209,19 @@ p {
   margin-top: 40px;
 }
 
+.fa-blank {
+  color: white;
+}
+
+.address {
+  margin-top: 17px;
+  margin-right: 90px;
+}
+
+.address p {
+  text-align: center;
+}
+
 svg {
   background-color: #eee;
 }
@@ -214,7 +232,17 @@ svg {
 
 .qr img {
   position: absolute;
-  bottom: 98px;
+  bottom: 32px;
   right: 98px;
   width: 200px;
+}
+
+.website {
+  position: absolute;
+  bottom: 235px;
+  right: 140px;
+}
+
+.website p {
+  font-weight: 400;
 }

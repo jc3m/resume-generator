@@ -1,52 +1,74 @@
 {
   "basics": {
-    "name": "Jonathan J. Xu",
+    "name": "Jonathan Xu",
     "website": "jonathanjx.me",
     "phone": "847-387-2018",
     "email": "jjxu3@illinois.edu",
     "github": "/jc3m",
-    "linkedin": "/in/jonathanjxu"
+    "linkedin": "/in/jonathanjxu",
+    "objective": "To continually aim for excellence in life and work by pursuing and perfecting new skills and technologies",
+    "address": {
+      "line1": "1012 W Illinois Street",
+      "line2": "URH 516 Wardall",
+      "line3": "Urbana, IL, 61801"
+    }
   },
   "education": {
     "institution": "University of Illinois at Urbana-Champaign",
     "honors": [
-      "Engineering Dean's List (Fall 2015, Spring 2016)",
+      "Engineering Dean's List (All Semesters)",
       " James Scholar"
     ],
-    "degree": "B.S. Computer Engineering",
-    "gpa": "3.98",
+    "degree": "B.S. Computer Engineering (2019)",
+    "gpa": "3.99",
     "courses": [
-      "ECE 120",
-      "ECE 220"
+      "Data Structures",
+      "Computer Systems Engineering",
+      "Advanced Data Science"
+    ],
+    "courses-nums": [
+      "CS 225",
+      "ECE 391",
+      "INFO 490"
     ],
     "startDate": "Aug 2015",
     "endDate": "Present"
   },
   "experience": [
     {
-      "company": "Corporate Executive Board",
-      "website": "https://www.cebglobal.com/",
-      "position": "Data Intern",
-      "startDate": "Oct 2015",
-      "endDate": "Present",
+      "company": "MongoDB",
+      "website": "http://www.mongodb.com/",
+      "position": "Software Engineering Intern",
+      "startDate": "May 2017",
+      "endDate": "Aug 2017",
       "summary": [
-        "Worked with a team of UIUC students and proffessionals at CEB.",
-        "Managed data within Hadoop clusters using tools such as Hive and Sqoop",
-        "Created, populated, managed an ElasticSearch index and built data visualizations using the Kibana interface",
-        "Built user interfaces and data visualizations for marketing data using D3.js"
+        "Software engineering intern on MongoDB's Cloud Backup Team"
       ],
       "highlights": []
     },
     {
-      "company": "FIRST Tech Challenge Robotics",
-      "website": "",
-      "position": "Team Captain",
-      "startDate": "2011",
-      "endDate": "2015",
+      "company": "Caterpillar",
+      "website": "http://www.cat.com/",
+      "position": "College Practicum",
+      "startDate": "Jan 2017",
+      "endDate": "May 2017",
       "summary": [
-        "Managed a team of 8 engineers 12+ hours/week to build a competitive robot",
-        "Used Autodesk Inventor to design and prototype ideas",
-        "Two time participant at the FIRST World Championship"
+        "Developed an interactive web application used to analyze video footage",
+        "Built with AngularJS and D3.js for data visualization and analysis",
+        "Interfaced with a REST API to save and retrieve data from a MySQL server"
+      ],
+      "highlights": []
+    },
+    {
+      "company": "CEB",
+      "website": "https://www.cebglobal.com/",
+      "position": "Data Engineering Intern",
+      "startDate": "Oct 2015",
+      "endDate": "Dec 2016",
+      "summary": [
+        "Managed data within Hadoop clusters using tools such as Hive and Sqoop",
+        "Created, populated, managed an ElasticSearch index and built data visualizations using the Kibana interface",
+        "Built user interfaces and data visualizations for marketing data using D3.js"
       ],
       "highlights": []
     }
@@ -59,16 +81,37 @@
       "summary": [
         "Grapevine is a social event finding iOS and Android app where users can post hosted events or find ones happening near by",
         "Worked on a RESTful API backend architecture to manage app data",
-        "Built using Node.js + Express with a MongoDB database"
+        "Built using Node.js, Express, Chai, and Socket.IO with a MySQL database",
+        "Hosted on AWS using Elastic Beanstalk for the server, S3 for image/video uploads, and RDS for MySQL hosting"
+      ]
+    },
+    {
+      "name": "Enrich",
+      "startDate": "MHacks 9",
+      "endDate": "",
+      "summary": [
+        "Enrich introduces beginners to investing by automatically upcharging purchases and putting the extra charge into a portfolio that reflects past transactions",
+        "Winner of Best Financial Hack presented by Capital One and best use of AWS",
+        "Built using Swift, Node.js and MongoDB, hosted on AWS Elastic Beanstalk"
+      ]
+    },
+    {
+      "name": "Itineratr",
+      "startDate": "HackIllinois, 2017",
+      "endDate": "",
+      "summary": [
+        "Itineratr is a web application that generates travel itineraries for vacationers",
+        "Winner of Small World prize presented by Amadeus",
+        "Built using AngularJS, Node.js, and Microsoft Azure"
       ]
     },
     {
       "name": "ScavAR",
-      "startDate": "Nov 2015",
+      "startDate": "WildHacks, 2015",
       "endDate": "",
       "summary": [
         "Augmented reality scavenger hunt mobile application where specific tokens generate animated, three dimensional models on the user's screen",
-        "Built at WildHacks 2015, 1st place winner, Paypal/Braintree Most Disruptive Use of Braintree SDK or Paypal API",
+        "1st place winner, Paypal/Braintree Most Disruptive Use of Braintree SDK or Paypal API",
         "Built using Unity, Vuforia, and Ruby on Rails"
       ]
     }
@@ -91,34 +134,56 @@
         "weight": 5.2
       },
       {
-        "name": "HTML/CSS",
+        "name": "C++",
+        "weight": 3.8
+      },
+      {
+        "name": "CSS/Sass",
         "weight": 6.3
       },
       {
+        "name": "HTML",
+        "weight": 6.9
+      },
+      {
         "name": "Java",
-        "weight": 4.5
+        "weight": 6.3
       },
       {
         "name": "Javascript",
-        "weight": 7.0
+        "weight": 7.9
       },
       {
         "name": "Python",
-        "weight": 7.3
-      },
-      {
-        "name": "Ruby",
-        "weight": 1.8
-      },
-      {
-        "name": "SQL",
-        "weight": 3.95
+        "weight": 7.4
       }
     ],
     "technologies": [
       {
+        "name": "AngularJS",
+        "weight": 3.4
+      },
+      {
         "name": "D3.js",
         "weight": 6.2
+      },
+      {
+        "name": "MongoDB",
+        "weight": 7.5
+      },
+      {
+        "name": "MySQL",
+        "weight": 3.95
+      },
+      {
+        "name": "React",
+        "weight": 5.8
+      }
+    ],
+    "devops": [
+      {
+        "name": "AWS",
+        "weight": 4.1
       },
       {
         "name": "Git/SVN",
@@ -127,18 +192,6 @@
       {
         "name": "Linux",
         "weight": 8.1
-      },
-      {
-        "name": "MongoDB",
-        "weight": 4.8
-      },
-      {
-        "name": "Node.js",
-        "weight": 6.6
-      },
-      {
-        "name": "Ruby on Rails",
-        "weight": 3.7
       }
     ]
   },
