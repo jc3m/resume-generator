@@ -42,7 +42,9 @@
       "startDate": "May 2017",
       "endDate": "Aug 2017",
       "summary": [
-        "Software engineering intern on MongoDB's Cloud Backup Team"
+        "SWE Intern on the Cloud Backup team",
+        "Worked on various front end, back end, and agent features for backing up MongoDB Atlas/Cloud Manager instances",
+        "Helped design and implement an alternative way to store MongoDB Oplogs by using Amazon S3"
       ],
       "highlights": []
     },
@@ -54,7 +56,7 @@
       "endDate": "May 2017",
       "summary": [
         "Developed an interactive web application used to analyze video footage",
-        "Built with AngularJS and D3.js for data visualization and analysis",
+        "Used AngularJS and D3.js for data visualization and analysis",
         "Interfaced with a REST API to save and retrieve data from a MySQL server"
       ],
       "highlights": []
@@ -77,12 +79,12 @@
     {
       "name": "Grapevine",
       "startDate": "Mar 2016",
-      "endDate": "Present",
+      "endDate": "Feb 2017",
       "summary": [
         "Grapevine is a social event finding iOS and Android app where users can post hosted events or find ones happening near by",
         "Worked on a RESTful API backend architecture to manage app data",
         "Built using Node.js, Express, Chai, and Socket.IO with a MySQL database",
-        "Hosted on AWS using Elastic Beanstalk for the server, S3 for image/video uploads, and RDS for MySQL hosting"
+        "Hosted on AWS using Elastic Beanstalk, S3 for image/video uploads, and RDS for MySQL hosting"
       ]
     },
     {
@@ -100,19 +102,9 @@
       "startDate": "HackIllinois, 2017",
       "endDate": "",
       "summary": [
-        "Itineratr is a web application that generates travel itineraries for vacationers",
+        "Itineratr is a web application that generates personalized travel itineraries for vacationers based on variables such as budget or party size",
         "Winner of Small World prize presented by Amadeus",
         "Built using AngularJS, Node.js, and Microsoft Azure"
-      ]
-    },
-    {
-      "name": "ScavAR",
-      "startDate": "WildHacks, 2015",
-      "endDate": "",
-      "summary": [
-        "Augmented reality scavenger hunt mobile application where specific tokens generate animated, three dimensional models on the user's screen",
-        "1st place winner, Paypal/Braintree Most Disruptive Use of Braintree SDK or Paypal API",
-        "Built using Unity, Vuforia, and Ruby on Rails"
       ]
     }
   ],
@@ -183,15 +175,15 @@
     "devops": [
       {
         "name": "AWS",
-        "weight": 4.1
+        "weight": 3.1
       },
       {
         "name": "Git/SVN",
-        "weight": 7.4
+        "weight": 5.3
       },
       {
         "name": "Linux",
-        "weight": 8.1
+        "weight": 6.2
       }
     ]
   },
