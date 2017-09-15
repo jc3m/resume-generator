@@ -23,11 +23,11 @@
     "gpa": "3.99",
     "courses": [
       { "name": "Data Structures", "number": "CS 225" },
+      { "name": "Algorithms *", "number": "CS 374" },
+      { "name": "Compilers *", "number": "CS 421" },
       { "name": "Computer Systems Engineering", "number": "ECE 391" },
-      { "name": "Algorithms", "number": "CS 374" },
-      { "name": "Parallel Programming", "number": "ECE 408" },
-      { "name": "Communication Networks", "number": "ECE 438" },
-      { "name": "Programming Languages & Compilers", "number": "CS 421" }
+      { "name": "Parallel Programming *", "number": "ECE 408" },
+      { "name": "Communication Networks *", "number": "ECE 438" }
     ],
     "startDate": "Aug 2015",
     "endDate": "Present"

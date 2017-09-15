@@ -86,11 +86,14 @@ function render(t, doc, callback) {
     });
 
     Handlebars.registerHelper('courses', function(items, options) {
-      let out = '<ul>';
+      let out = '<div><ul>';
       for (let i = 0; i < items.length; i++) {
         out = out + `<li>${items[i].number} - ${items[i].name}</li>`;
+        if (items.length > 1 && i >= items.length / 2 - 1 && i < items.length / 2) {
+          out = out + '</ul></div><div><ul>';
+        }
       }
-      return out + '</ul>';
+      return out + '</ul></div>';
     });
 
     const template = Handlebars.compile(temp);

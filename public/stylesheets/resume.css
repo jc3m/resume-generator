@@ -174,16 +174,22 @@ p {
 }
 
 #course-list {
-  display: inline;
+  display: flex;
+  flex-direction: row;
 }
 
 #course-list ul {
-  column-count: 2;
   padding-left: 0;
+  padding-right: 30px;
+  margin-bottom: 3px;
 }
 
 #course-list ul > li {
   list-style: none;
+}
+
+.disclaimer {
+  font-size: 15px;
 }
 
 .details {
