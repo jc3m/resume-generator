@@ -8,9 +8,9 @@
     "linkedin": "/in/jonathanjxu",
     "objective": "To continually aim for excellence in life and work by pursuing and perfecting new skills and technologies",
     "address": {
-      "line1": "1012 W Illinois Street",
-      "line2": "URH 516 Wardall",
-      "line3": "Urbana, IL, 61801"
+      "line1": "508 East Healey",
+      "line2": "Apt 111",
+      "line3": "Champaign, IL, 61820"
     }
   },
   "education": {
@@ -22,14 +22,12 @@
     "degree": "B.S. Computer Engineering (2019)",
     "gpa": "3.99",
     "courses": [
-      "Data Structures",
-      "Computer Systems Engineering",
-      "Advanced Data Science"
-    ],
-    "courses-nums": [
-      "CS 225",
-      "ECE 391",
-      "INFO 490"
+      { "name": "Data Structures", "number": "CS 225" },
+      { "name": "Computer Systems Engineering", "number": "ECE 391" },
+      { "name": "Algorithms", "number": "CS 374" },
+      { "name": "Parallel Programming", "number": "ECE 408" },
+      { "name": "Communication Networks", "number": "ECE 438" },
+      { "name": "Programming Languages & Compilers", "number": "CS 421" }
     ],
     "startDate": "Aug 2015",
     "endDate": "Present"

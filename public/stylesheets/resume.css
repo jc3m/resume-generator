@@ -177,6 +177,15 @@ p {
   display: inline;
 }
 
+#course-list ul {
+  column-count: 2;
+  padding-left: 0;
+}
+
+#course-list ul > li {
+  list-style: none;
+}
+
 .details {
   margin-top: 80px;
 }

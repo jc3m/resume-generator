@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var path = require('path');
-var fs = require('fs');
-var Handlebars = require('handlebars');
+const path = require('path');
+const fs = require('fs');
+const Handlebars = require('handlebars');
 
 router.get('/', function(req, res, next) {
   res.redirect('/resume');
@@ -13,94 +13,91 @@ router.get('/read', function(req, res, next) {
   if (!req.query.path) {
     return next({
       status: 400,
-      message: 'Must specify a path in query'
+      message: 'Must specify a path in query',
     });
   }
 
   parseJSON(req.query.path, function(err, doc) {
-    if (err)
-      return next(err);
+    if (err) return next(err);
     res.json(doc);
   });
 });
 
 router.get('/resume', function(req, res, next) {
   if (!req.query.path) {
-    req.query.path = 'jx.json'
+    req.query.path = 'jx.json';
   }
 
   parseJSON(req.query.path, function(err, doc) {
-    if (err)
-      return next(err);
+    if (err) return next(err);
     render('t1.html', doc, function(err, resume) {
-      if (err)
-        return next(err);
+      if (err) return next(err);
       res.send(resume);
     });
   });
 });
 
 function parseJSON(f, callback) {
-  var fp = path.join(__dirname, '..', 'resumes', f);
+  const fp = path.join(__dirname, '..', 'resumes', f);
   fs.readFile(fp, function(err, file) {
-    if (err)
-      return callback(err);
-    var out;
+    if (err) return callback(err);
     try {
-      out = JSON.parse(file);
-    } catch(err) {
-      return callback(err)
+      const out = JSON.parse(file);
+      return callback(null, out);
+    } catch (err) {
+      return callback(err);
     }
-    return callback(null, out);
   });
 }
 
 function render(t, doc, callback) {
-  var templatePath = path.join(__dirname, '..', 'templates', t);
+  const templatePath = path.join(__dirname, '..', 'templates', t);
   fs.readFile(templatePath, 'utf-8', function(err, temp) {
-    if (err)
-      return callback(err);
+    if (err) return callback(err);
 
     Handlebars.registerHelper('sk-list', function(items, options) {
-      var out = "<div>";
-      for (var i = 0; i < items.length; i++) {
-        out = out + '<div class="skill"><h5>' + options.fn(items[i])
-          + '</h5><svg weight="' + items[i].weight + '"></svg></div>'
+      let out = '<div>';
+      for (let i = 0; i < items.length; i++) {
+        out =
+          out +
+          '<div class="skill"><h5>' +
+          options.fn(items[i]) +
+          '</h5><svg weight="' +
+          items[i].weight +
+          '"></svg></div>';
       }
-      return out + '</div>'
+      return out + '</div>';
     });
 
     Handlebars.registerHelper('list', function(items, options) {
-      var out = '<div class="block-wrapper">';
-      for (var i = 0; i < items.length; i++) {
+      let out = '<div class="block-wrapper">';
+      for (let i = 0; i < items.length; i++) {
         out = out + options.fn(items[i]);
       }
-      return out + "</div>"
+      return out + '</div>';
     });
 
     Handlebars.registerHelper('points', function(items, options) {
-      var out = '<ul>';
-      for (var i = 0; i < items.length; i++) {
+      let out = '<ul>';
+      for (let i = 0; i < items.length; i++) {
         out = out + '<li>' + items[i] + '</li>';
       }
-      return out + "</ul>"
+      return out + '</ul>';
     });
 
     Handlebars.registerHelper('courses', function(items, options) {
-      var out = '';
-      for (var i = 0; i < items.length - 1; i++) {
-        out = out + items[i] + ', ';
+      let out = '<ul>';
+      for (let i = 0; i < items.length; i++) {
+        out = out + `<li>${items[i].number} - ${items[i].name}</li>`;
       }
-      out = out + items[items.length - 1];
-      console.log(out);
-      return out;
+      return out + '</ul>';
     });
 
-    var template = Handlebars.compile(temp);
-    var res = template(doc);
-    //console.log(res);
+    const template = Handlebars.compile(temp);
+    const res = template(doc);
     return callback(null, res);
   });
 }
 
 module.exports = router;
+
