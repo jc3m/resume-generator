@@ -20,19 +20,41 @@
       " James Scholar"
     ],
     "degree": "B.S. Computer Engineering (2019)",
-    "gpa": "3.99",
+    "gpa": "3.98",
     "courses": [
       { "name": "Data Structures", "number": "CS 225" },
-      { "name": "Algorithms *", "number": "CS 374" },
-      { "name": "Compilers *", "number": "CS 421" },
+      { "name": "Algorithms", "number": "CS 374" },
+      { "name": "Compilers", "number": "CS 421" },
       { "name": "Computer Systems Engineering", "number": "ECE 391" },
-      { "name": "Parallel Programming *", "number": "ECE 408" },
-      { "name": "Communication Networks *", "number": "ECE 438" }
+      { "name": "Communication Networks", "number": "ECE 438" }
     ],
     "startDate": "Aug 2015",
-    "endDate": "Present"
+    "endDate": "May 2019"
   },
   "experience": [
+    {
+      "company": "Facebook",
+      "website": "https://facebook.com",
+      "position": "Software Engineering Intern",
+      "startDate": "May 2018",
+      "endDate": "Aug 2018",
+      "summary": [
+        "Working on FB Live under the Video Infrastructure Org"
+      ],
+      "highlights": []
+    },
+    {
+      "company": "Syngenta",
+      "website": "https://facebook.com",
+      "position": "Software Engineering Intern",
+      "startDate": "Aug 2017",
+      "endDate": "May 2018",
+      "summary": [
+        "Wrote web applications in React for internal agricultral tools that queried a GraphQL interface",
+        "Worked with teams of designers and backend engineers to create applications"
+      ],
+      "highlights": []
+    },
     {
       "company": "MongoDB",
       "website": "http://www.mongodb.com/",
@@ -42,33 +64,7 @@
       "summary": [
         "SWE Intern on the Cloud Backup team",
         "Worked on various front end, back end, and agent features for backing up MongoDB Atlas/Cloud Manager instances",
-        "Helped design and implement an alternative way to store MongoDB Oplogs by using Amazon S3"
-      ],
-      "highlights": []
-    },
-    {
-      "company": "Caterpillar",
-      "website": "http://www.cat.com/",
-      "position": "College Practicum",
-      "startDate": "Jan 2017",
-      "endDate": "May 2017",
-      "summary": [
-        "Developed an interactive web application used to analyze video footage",
-        "Used AngularJS and D3.js for data visualization and analysis",
-        "Interfaced with a REST API to save and retrieve data from a MySQL server"
-      ],
-      "highlights": []
-    },
-    {
-      "company": "CEB",
-      "website": "https://www.cebglobal.com/",
-      "position": "Data Engineering Intern",
-      "startDate": "Oct 2015",
-      "endDate": "Dec 2016",
-      "summary": [
-        "Managed data within Hadoop clusters using tools such as Hive and Sqoop",
-        "Created, populated, managed an ElasticSearch index and built data visualizations using the Kibana interface",
-        "Built user interfaces and data visualizations for marketing data using D3.js"
+        "Helped design and implement an alternative way to store MongoDB Oplogs through AWS S3"
       ],
       "highlights": []
     }
@@ -94,26 +90,26 @@
         "Winner of Best Financial Hack presented by Capital One and best use of AWS",
         "Built using Swift, Node.js and MongoDB, hosted on AWS Elastic Beanstalk"
       ]
-    },
-    {
-      "name": "Itineratr",
-      "startDate": "HackIllinois, 2017",
-      "endDate": "",
-      "summary": [
-        "Itineratr is a web application that generates personalized travel itineraries for vacationers based on variables such as budget or party size",
-        "Winner of Small World prize presented by Amadeus",
-        "Built using AngularJS, Node.js, and Microsoft Azure"
-      ]
     }
   ],
   "campus": [
     {
-      "organization": "RedC Robotics Lead Web Developer",
-      "startDate": "Sep 2015",
+      "organization": "Engineering Open House",
+      "startDate": "Aug 2017",
       "endDate": "Present",
       "summary": [
-        "Created redcrobotics.com using Node.js, Express, and MongoDB",
-        "Website used as a promotional tool as well as a way to manage team applications, contact, and member information"
+        "Held Co-Director of tech position, coordinated all EOH technology needs",
+        "Built Day-Of PWA which provided visitors with essential information such as parking, exhibit information, and schedule",
+        "Event attended by 30,000 visitors from across the Midwest"
+      ]
+    },
+    {
+      "organization": "HackIllinois",
+      "startDate": "May 2018",
+      "endDate": "Present",
+      "summary": [
+        "Front End Web Developer for HackIllinois 2019",
+        "Built HackIllinois 2019 website using React, built internal tools using Electron"
       ]
     }
   ],
@@ -149,10 +145,6 @@
       }
     ],
     "technologies": [
-      {
-        "name": "AngularJS",
-        "weight": 3.4
-      },
       {
         "name": "D3.js",
         "weight": 6.2
